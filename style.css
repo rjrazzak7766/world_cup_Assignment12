@@ -1,0 +1,197 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    color: white;
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+}
+.header-content{
+    width: 90%;
+}
+.header-content h1{
+ font-size: 70px;
+ line-height: 80px;
+}
+.header-content p{
+    font-size: 16px;
+}
+.header-image img{
+    margin-right: 20px;
+    width: 100%;
+}
+.header-content button{
+    background-color: #DD0000;
+    width: 150px;
+    height: 36px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.header-content button a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* header End  */
+.Side-Button{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.button1{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.button1 a{
+    text-decoration: none;
+}
+.button2{
+    margin: 10px;
+    padding: 10px;
+    background-color: #DD0000;
+    border-radius: 5px;
+}
+.button2 a{
+    text-decoration: none;
+    color: white;
+}
+.blogs{
+    margin: 1rem;
+    padding: 20px;
+    box-shadow: 10px 10px 40px grey;
+    width: 200px;
+    border-radius: 10px;
+    }
+    .blogs img{
+        width: 95%;
+    }
+    .blogs button{
+        background: #fff;
+        border: 2px solid rgb(196, 190, 190);
+    }
+    .blogs button a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    .blogs h4{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .blog-content-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-blog-item{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer{
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 100px;
+    }
+    footer h1{
+        padding: 20px;
+        border-bottom: 2px solid white;
+    }
+    footer ol li{
+        list-style: none;
+        display: inline-block;
+    }
+    footer ol li a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .blogs p span img {
+        width: 40%;
+    }
+
+    /* Mobile  */
+    
+     @media only screen and (max-width: 680px) {
+        .header-item{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            grid-auto-flow: column;
+            grid-column-end:auto;
+        }
+        .header-content h1{
+            font-size: 50px;
+        }
+        .header-image img {
+                margin-left: 10px;
+                background-color: black;
+        }
+        .blog-content-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .Side-Button{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .main-blog-item{
+            display: flex;
+            flex-direction: column;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+     /* Tablet  */
+
+    @media only screen and (min-width: 680px) and (max-width:992px)  {
+        .header-item{
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        .header-content h1{
+            font-size: 20px;
+        }
+        .header-image img {
+                margin-left: 10px;
+                background-color: black;
+                width: 80%;
+        }
+        .blog-content-item {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .Side-Button{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+        .container{
+            width: 100%;
+        }
+         .main-blog-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        footer{
+            width: 100%;
+            text-align: center;
+        }
+    }
